@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper, Scissors</title>
+        <meta charset="UTF-8"/>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <h1 id = "title">Rock, Paper, Scissors</h1>
+        <div id = "num-rounds">
+            <span>Round</span>
+        </div>
+        <div class = "container">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id = "result"></p>
+                </div>
+              
+              </div>
+            <div class = "choices" tabindex="1">
+                <input type = "image" src = "rock.png" id = "rock" class = "btn"/>
+                <span>Rock</span>
+            </div>
+            <div data-button = "paper" class = "choices" tabindex="1">
+                <input type = "image" src = "paper.png" id = "paper" class = "btn"/>
+                <span>Paper</span>
+            </div>
+            <div data-key = "scissors" class = "choices" tabindex="1">
+                <input type = "image" src = "scissors.png" id = "scissors" class = "btn"/>
+                <span>Scissors</span>
+            </div>
+        </div>
+        <div class = "scoreboard">
+            <h3 class = "label">Score</h3>
+            <span class = "player-score">Player:</span>
+            <span class = "computer-score">Computer:</span>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+</html>
